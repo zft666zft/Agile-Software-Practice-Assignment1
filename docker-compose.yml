@@ -2,6 +2,8 @@ version: '3.8'
 
 services:
   seed:
+    environment:
+      MONGODB_URI: mongodb://admin:password@mongo:27017/movies
     build: .
     command: node seed.js
     depends_on:

@@ -2,7 +2,7 @@ const MongoClient = require('mongodb').MongoClient;
 const fs = require('fs');
 
 // MongoDB URL from the Docker Compose environment variable
-const url = 'mongodb://admin:password@localhost:27017';
+const url = 'mongodb://admin:password@mongo:27017';
 const dbName = 'movies';
 const client = new MongoClient(url);
 
